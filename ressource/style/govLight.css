@@ -1,0 +1,443 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+.loginerr {
+    background-color: rgb(197, 95, 95);
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid rgb(148, 72, 72);
+    width: fit-content;
+}
+.logout {
+    background-color: rgb(76, 160, 80);
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid rgb(59, 112, 54);
+    width: fit-content;
+}
+.error {
+    color: rgb(255, 0, 0);
+
+}
+.top {
+  display: flex;
+}
+.dashboard {
+  flex: auto;
+  border: 4px solid lightgrey;
+  width: fit-content;
+  margin: 20px -4px 20px 0px;
+}
+.dashboard h4 {
+  color: gray;
+  text-align: center;
+  margin: 10px 10px 0px 10px;
+}
+.dashboard h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.transaction input {
+  margin: 20px 0px;
+  font-size: 20px;
+  border: 0;
+  border-bottom: 2px solid lightgrey;
+  transition: 0.3s;
+  padding: 1px 2px;
+}
+.transaction input.date {
+  height: 23px;
+  width: 243px;
+}
+.transaction input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.transaction input:hover {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.transaction span {
+  font-size: 23px;
+  font-weight: bold;
+}
+.transaction .money {
+  width: 210px;
+  
+}
+.transaction .submit {
+  background-color: white;
+  border: 1px solid gray;
+  font-size: 25px;
+  box-shadow: none;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.submit:hover {
+  color: #ffffff;
+  background-color: #a35e26;
+  cursor: pointer;
+}
+.transaction .search {
+  background-color: white;
+  border: 1px solid gray;
+  margin: 10px;
+  font-size: 20px;
+  box-shadow: none;
+  padding: 10px;
+  transition: 0.5s;
+  text-align: center;
+  
+}
+.btn{
+  color: #000000;
+  background-color: white;
+  border: 1px solid gray;
+  font-size: 25px;
+  box-shadow: none;
+  padding: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.btn:hover{
+  color: #ffffff;
+  background-color: #a35e26;
+  cursor: pointer;
+}
+.btn:visited {
+  color: #000000;
+}
+
+.transaction .search:hover {
+  color: #ffffff;
+  background-color: #a35e26;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  
+}
+.back {
+  font-size: 40px;
+  font-weight: bold !important;
+  text-decoration: none;
+  border: 1px solid black;
+  background-color: white;
+  transition: 0.5s;
+  text-align: center;
+  padding: 5px 10px 10px 10px;
+}
+.back:hover {
+  background-color: #a35e26;
+
+}
+.back:visited {
+  color: #000000;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%; /* Full width */
+  
+}
+.navbar.my {
+  background-color: #a35e26;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 20px;
+  height: 27px;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.navbar div {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 18px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+  margin-top: 55px;
+  height: 100%; 
+  width: 270px; 
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(255, 255, 255); 
+  overflow-x: hidden; 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  border-right: 2px solid lightgrey;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  margin:  -1px 15px -1px 15px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  border: 1px solid lightgrey;
+  white-space: nowrap;
+  width: -webkit-fill-available;
+  
+}
+.sidenav .selected {
+  background-color: #a35e26;
+  color: white;
+}
+
+.sidenav h3{
+  text-align: center;
+  white-space: nowrap
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #a35e26;
+  color: white;
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  border: none;
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.bottom {
+  width: -webkit-fill-available;
+  position: absolute;
+  bottom: 100px;
+  padding: 8px 8px 8px 8px;
+  margin: -1px 15px -1px 15px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  transition: 0.3s;
+  border: 1px solid #303030;
+  white-space: nowrap;
+  cursor: pointer;
+  
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+  margin-left: 270px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  margin-top: 60px; 
+}
+
+.salesDisplay{
+  border: 1px solid black;
+}
+.sales table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+  font-size: 18px;
+  margin-bottom: 30px;
+  
+}
+.sales th {
+  background-color: #000000;
+  color: white;
+  border: 1px solid black;
+}
+.sales .even{
+  background-color: rgb(230, 203, 128);
+}
+.sales .odd{
+  background-color: rgb(250, 180, 114);
+}
+.sales td {
+  border: 1px solid black;
+}
+.sales button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  outline: 0;
+  font-size: 20px;
+  background-color: #00000000;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.sales tr.button:hover td{
+  background-color: #a35e26;
+  transition: 0.3s;
+  color: white;
+}
+.article button {
+  background-color: white;
+  border-radius: 0;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.article button:hover {
+  background-color: #a35e26;
+  cursor: pointer;
+  color: white;
+}
+.article input {
+  font-size: 20px;
+  width: 30px;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid lightgrey;
+}
+
+
+
+/* ------- SWITCH ---------- */
+.checkbox {
+  size: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(55px);
+  -ms-transform: translateX(55px);
+  transform: translateX(55px);
+}
+
+/*------ MODAL DIALOG BOXES ---------*/
+.on
+{
+  display: none;
+}
+
+.on, .off
+{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked+ .slider .on
+{display: block;}
+
+input:checked + .slider .off
+{display: none;}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 2px solid lightgray;
+  
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
